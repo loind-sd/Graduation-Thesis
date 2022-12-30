@@ -1,0 +1,44 @@
+.home {
+    position: relative;
+    width: calc(100% - var(--width--menu_bar));
+    float: right;
+
+    .content {
+        position: absolute;
+        top: var(--height--header);
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+        }
+    }
+}
+
+.banner-container {
+    height: 15vh;
+}
+
+.banner {
+    // background: #d9d9d9;
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/320476910_678737057237454_6649406353861772174_n.png?stp=dst-png_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=8kK4EG9588cAX900fmw&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRBv5k0eeMLtVUcc8aX6Dk7cvyB0oKCZi0-SFKdkgedeQ&oe=63CA4B59');
+    background-size: cover;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+#search-addon {
+    background-color: #f7faff;
+    border: unset !important;
+}
+
+#filter-addon {
+    background-color: #f7faff;
+    border: unset !important;
+}
+
+.search {
+    border: unset !important;
+    height: calc(1.5em + 0.75rem + 12px) !important;
+    font-size: 1.4rem !important;
+    background-color: #f7faff;
+}

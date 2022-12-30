@@ -1,0 +1,33 @@
+// .wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .container {
+//     width: 1150px;
+//     max-width: 100%;
+//     padding: 0 24px;
+//     margin-top: 60px;
+//     display: flex;
+// }
+
+// .chat-content {
+//     flex: 1;
+// }
+
+.chat {
+    position: relative;
+    width: calc(100% - var(--width--menu_bar));
+    float: right;
+
+    .chat-content {
+        position: absolute;
+        top: var(--height--header);
+    }
+    @media screen and (max-width: 768px) {
+        .chat-content {
+            position: fixed;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.content-base {
+    position: relative;
+    width: calc(100% - var(--width--menu_bar));
+    float: right;
+}
+
+.content-children {
+    position: absolute;
+    top: var(--height--header);
+    width: 100%;
+}

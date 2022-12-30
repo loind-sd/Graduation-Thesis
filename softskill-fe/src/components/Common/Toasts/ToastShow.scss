@@ -1,0 +1,13 @@
+.custom-close {
+    cursor: pointer;
+    font-size: 1.6rem !important;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.toast {
+    font-size: 1.4rem !important;
+}

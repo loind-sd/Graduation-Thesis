@@ -1,0 +1,42 @@
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.task {
+    position: relative;
+    width: calc(100% - var(--width--menu_bar));
+    float: right;
+
+    .content {
+        position: absolute;
+        top: var(--height--header);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .task {
+        width: 100% !important;
+    }
+
+    .tasks-container {
+        margin: 0 5px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .body-content {
+        width: 100% !important;
+    }
+
+    .col-9 {
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    .friend-bar {
+        width: 0 !important;
+        display: none !important;
+    }
+}

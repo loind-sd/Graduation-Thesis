@@ -1,0 +1,147 @@
+input,
+textarea {
+    font-size: 1.4rem !important;
+}
+
+.create-room {
+    .p-dialog-content {
+        border-radius: 5px;
+    }
+
+    switch.p-inputswitch-checked .p-inputswitch-slider {
+        background-color: #22c55e !important;
+
+        &:hover {
+            background-color: #22c55e !important;
+            ;
+        }
+    }
+
+    .p-dialog-header {
+        display: none;
+    }
+
+    .room-header {
+
+        .title {
+            .title-content {
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+        }
+
+        .description {
+            font-size: 1.4rem;
+            color: rgb(64, 62, 62);
+        }
+
+    }
+
+    .room-content {
+        font-size: 1.6rem;
+
+        .room-name {
+            input {
+                margin: 10px;
+                width: 98%;
+            }
+        }
+
+        .room-size {
+
+            .p-inputnumber-button-down,
+            .p-inputnumber-button-up {
+                background-color: #999999;
+                border: none;
+                width: 25px;
+                height: 25px;
+                border-radius: 7px !important;
+
+                &:hover {
+                    background-color: #17548C;
+                }
+            }
+
+            .p-inputnumber-button-down {
+                margin-right: 5px;
+                margin-top: 7px;
+            }
+
+            .p-inputnumber-button-up {
+                margin-left: 5px;
+                margin-top: 7px;
+            }
+
+            .p-inputnumber {
+                margin-left: 10px;
+
+            }
+
+            input {
+                text-align: center;
+                width: 50%;
+                border-radius: 6px;
+            }
+
+            .p-inputwrappe {
+                width: 90% !important;
+                margin-left: 10px;
+            }
+
+            .p-inputnumber-buttons-horizonta {
+                width: 90% !important;
+                margin-left: 10px;
+            }
+        }
+
+        .room-soft-skill {
+            .p-inputwrapper {
+                margin-left: 10px;
+                width: 95%;
+            }
+        }
+
+        .room-description {
+            textarea {
+                height: 80px !important;
+                width: 98%;
+            }
+        }
+
+        .room-task {
+            .task-detail {
+                cursor: pointer;
+                font-size: 1.2rem;
+                text-decoration: underline;
+                color: rgb(72, 72, 240);
+                font-style: italic;
+            }
+
+        }
+
+        .task-description {
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: aliceblue;
+
+            textarea {
+                height: 80px !important;
+            }
+        }
+
+        .room-task {
+            .p-dropdown {
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+
+        .room-date {
+            .p-calendar {
+                width: 100%;
+                margin-left: 10px;
+            }
+        }
+    }
+}

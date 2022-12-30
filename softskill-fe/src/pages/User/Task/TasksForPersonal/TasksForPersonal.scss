@@ -1,0 +1,301 @@
+.tabview-demo .tabview-header-icon i,
+.tabview-demo .tabview-header-icon span {
+    vertical-align: middle;
+}
+
+.tabview-demo .tabview-header-icon span {
+    margin: 0 .5rem;
+}
+
+.tabview-demo .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    border: none;
+}
+
+.p-tabview-nav .p-unselectable-text {
+    border-bottom: none;
+}
+
+.p-tabview-nav {
+    border: none !important;
+}
+
+.p-tabview-panels {
+    display: none;
+}
+
+// .invidual-task_content {
+//     .invidual-task_softskills {
+//         .invidual-task-info {}
+//     }
+
+// }
+.invidual_task-header {
+    .search-input {
+        margin: 2rem 2rem 0 2rem;
+
+        .icon-search {
+            cursor: pointer;
+            position: absolute;
+            font-size: 1.2rem;
+            padding-left: 5px;
+            opacity: 0.8;
+        }
+
+        .p-inputtext {
+            background-color: #F3F9FF;
+            border: none;
+            padding: 10px 10px 10px 40px;
+            width: 100%;
+        }
+    }
+}
+
+.invidual-task_content {
+    .invidual-task_softskills {
+        .invidual_task-info {
+            .task-item {
+
+                .task-item-header {
+                    Header {
+                        Span {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .task-content {
+                    padding: 0 1rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    height: 4rem;
+                    overflow: hidden;
+                    display: block;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .invidual-task_content {
+
+        padding: 2rem;
+
+        .invidual-task_softskills {
+            margin-bottom: 2rem;
+
+            .task-open {
+                .view-all {
+                    cursor: pointer;
+                    color: #4D8DF7;
+                    font-weight: 100;
+                    font-size: 1.4rem;
+                }
+
+                .view-all:hover {
+                    text-shadow: 2px 2px 5px darksalmon;
+                }
+            }
+
+            h5 {
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+
+            .invidual_task-info {
+                display: grid;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                // max-width: 85%;
+                // display: flex;
+                // flex-direction: row;
+                .mr-4,
+                .mx-4 {
+                    margin-bottom: 1rem;
+                }
+
+                .task-item {
+                    background-color: #D8EBFE;
+                    border-radius: 10px;
+
+                    .hightlight-search {
+                        padding: 0 !important;
+                        background-color: yellow;
+                    }
+
+                    .task-item-header {
+                        margin-bottom: 2rem;
+                    }
+
+                    .invidual-task-name {
+                        .task-name {
+                            font-size: 1.6rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                    // .invidual-task-content {
+                    //     .task-content {
+                    //         Span {
+                    //             font-size: 1.3rem;
+                    //             margin: 0 1rem;
+                    //         }
+
+                    //         // margin-top: 10px;
+
+                    //     }
+                    // }
+                }
+
+                Button {
+                    width: 100%;
+                    margin-top: 2rem;
+                    // margin-bottom: inherit;
+                    border-radius: 10px;
+                    height: 20%;
+
+                    Span {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .invidual_task-header {
+        .input-group {
+            margin-top: 1rem !important;
+            padding: 0 2rem 0 2rem !important;
+
+            .input-group-prepend {
+                border-radius: 10px !important;
+            }
+
+            .form-control:focus {
+                border-radius: 10px !important;
+            }
+
+            .input-group-append {
+                display: none;
+            }
+
+        }
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .header {
+        .p-button .p-component .w-100 .pl-5 .pr-5 .pb-2 .pt-2 .text-white .p-button-icon-only {
+            max-width: 50%;
+        }
+
+        position: inherit;
+    }
+
+    .task {
+        position: inherit;
+        float: left;
+
+
+        .header__info {
+            min-width: max-content;
+            font-size: 1.4rem;
+            margin-right: 2rem;
+        }
+
+        .header__room {
+            Button {
+                zoom: 60%;
+            }
+        }
+
+        .header__action {
+            z-index: inherit;
+        }
+
+        .content {
+            padding: 0 0 0 3rem;
+        }
+
+        .invidual-task_softskills {
+            margin-top: 2rem;
+
+            .task-open {
+                .view-all {
+                    cursor: pointer;
+                    color: #4D8DF7;
+                    font-weight: 100;
+                    font-size: 1.4rem;
+                }
+            }
+
+            h5 {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .invidual_task-info {
+                display: grid;
+                grid-gap: 2rem;
+                grid-template-columns: repeat(1, 1fr);
+
+                .mr-4,
+                .mx-4 {
+                    margin-bottom: 1rem;
+                }
+
+                .task-container {
+                    background-color: #D8EBFE;
+                    border-radius: 10px;
+
+                    .task-name {
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                    }
+
+                    // .task-content {
+                    //     margin-top: 10px;
+                    //     font-size: 1.3rem;
+                    // }
+                }
+
+                Button {
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: inherit;
+                }
+            }
+
+        }
+
+        .col-9 {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            .p-tabview .p-tabview-nav li {
+                max-width: fit-content;
+            }
+        }
+
+        .col-3 {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,40 @@
+.home {
+    position: relative;
+    width: calc(100% - var(--width--menu_bar));
+    float: right;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    .content {
+        position: absolute;
+        top: var(--height--header);
+        @media screen and (max-width: 768px) {
+            position: unset;
+        }
+    }
+}
+
+.monthpicker {
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.pie-chart .apexcharts-legend {
+    right: calc(100% - 70%) !important;
+    justify-content: center !important;
+}
+
+.apexcharts-legend {
+}
+
+.personal {
+    height: 350px !important;
+    box-shadow: 0 5px 10px -10px rgba($color: #000000, $alpha: 1);
+}
+
+.community {
+    height: 300px;
+    box-shadow: 0 5px 10px -10px rgba($color: #000000, $alpha: 1);
+}

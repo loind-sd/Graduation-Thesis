@@ -1,0 +1,241 @@
+.header__action {
+    width: 270px;
+    display: flex;
+    justify-content: flex-end;
+
+    .notify,
+    .user {
+        position: relative;
+        background-color: #e9f0fd;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 6px;
+
+        .logo {
+            cursor: pointer;
+        }
+    }
+
+    .notify {
+        .p-button.p-button-icon-only.p-button-rounded {
+            border-radius: 50%;
+            height: 3.2rem;
+        }
+
+        .p-button.p-button-icon-only {
+            width: 3.2rem;
+            padding: 0.75rem 0;
+        }
+
+        .p-button.p-button-warning.p-button-outlined {
+            background-color: transparent;
+            color: #4697d7;
+            border: 2px solid;
+
+            &:hover {
+                background: rgba(76, 164, 234, 0.1);
+                color: #4697d7;
+                border: 2px solid;
+            }
+        }
+
+        .notify__content {
+            position: absolute;
+            top: calc(100% + 11px);
+            right: -70px;
+            background-color: #fff;
+            border-radius: 4px;
+            width: var(--width--notify);
+            box-shadow: 0 1px 2px #e8e0e0;
+            animation: fadeIn ease-in 0.2s;
+            border-radius: 7px;
+            overflow-y: scroll;
+            height: auto;
+            max-height: 50vh;
+
+            .content-header {
+                font-size: 20px;
+                font-weight: 600;
+                padding: 5px 10px;
+            }
+
+            .content-list-option {
+                // cursor: pointer;
+
+                .content-item {
+                    padding: 5px 10px;
+                    margin: 5px 0;
+
+                    .item-info {
+                        display: flex;
+
+                        .item-image {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .item-info-detail {
+                            margin-left: 5px;
+
+                            .item-description {
+                                display: block;
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                                color: var(--color-text);
+                                line-height: 1.8rem;
+                                height: 3.6rem;
+                                overflow: hidden;
+                                display: block;
+                                text-overflow: ellipsis;
+                                // /* white-space: nowrap; */
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                            }
+
+                            .item-time {
+                                display: block;
+                                font-size: 1.2rem;
+                                color: var(--color-accent);
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .item-invite {
+                        margin: 10px 0 0 50px;
+
+                        .btn-custom {
+                            font-size: 1.4rem;
+                            width: 9rem;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #f7faff;
+                    }
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -20px;
+                right: 65px;
+                border-width: 15px 25px;
+                border-style: solid;
+                cursor: pointer;
+                border-color: transparent transparent transparent transparent;
+            }
+        }
+
+        .badge {
+            position: absolute;
+            top: 3px;
+            right: 1px;
+            padding: 2px 4px;
+            background-color: #148be9;
+            color: #1a4264;
+        }
+    }
+
+    .user {
+        margin-right: 20px;
+        padding: 3px;
+
+        .item-image {
+            border-radius: 50%;
+            display: contents;
+
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .user__option-list {
+            position: absolute;
+            top: calc(100% + 11px);
+            right: -15px;
+            background-color: #fff;
+            border-radius: 15px;
+            width: 250px;
+            padding-left: 0;
+            // box-shadow: 0 1px 2px #e8e0e0;
+            animation: fadeIn ease-in 0.2s;
+            box-shadow: 0px 1px 10px 1px #dfdfdf;
+
+            .user-item {
+                font-size: 1.4rem;
+                border-radius: 15px;
+
+                .link {
+                    color: var(--color-text);
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 8px;
+                    font-weight: bold;
+                    align-items: center;
+                    // border: 1px solid #4f6680;
+                    width: 100%;
+                    margin: 5px;
+                    border-radius: 15px;
+
+                    .custom-btn {
+                        cursor: pointer;
+                        color: var(--color-light);
+                        font-weight: bold;
+                        background-color: #3b82f6;
+                        padding: 5px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .change-nickName {
+                    margin-bottom: 5px;
+                }
+
+                .change-password {
+                    .custom-prime {
+                        >div {
+                            border: none !important;
+                        }
+
+                        input {
+                            border-radius: 25px;
+                            padding-left: 10px;
+                            font-size: 1.4rem;
+                        }
+
+                        i {
+                            font-size: 15px;
+                            margin-top: -6px !important;
+                            right: 6px;
+                            margin: 10px;
+                            top: 22px;
+                        }
+                    }
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -25px;
+                right: 15px;
+                border-width: 15px 20px;
+                border-style: solid;
+                cursor: pointer;
+                border-color: transparent transparent transparent transparent;
+            }
+        }
+    }
+}

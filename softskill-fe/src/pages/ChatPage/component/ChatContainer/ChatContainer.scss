@@ -1,0 +1,132 @@
+.chat-container {
+    display: grid;
+    grid-template-rows: 89.73% 10%;
+    // gap: 0.1rem;
+    overflow: hidden;
+    @media screen and (min-width: 720px) and (max-width: 1080px) {
+        grid-template-rows: 89.73% 10%;
+    }
+    width: 85%;
+    position: relative;
+
+    // &::after {
+    //     position: absolute;
+    //     content: '';
+    //     right: 0;
+    //     top: 0;
+    //     width: 15px;
+    //     height: 100%;
+    //     background-color: #f5f5f5 !important;
+    // }
+}
+
+.chat-content {
+    display: flex;
+    width: 100%;
+    z-index: -1;
+    height: 91.7vh;
+    position: fixed;
+    right: 0%;
+}
+
+.chat-messages {
+    width: auto;
+    // height: 2581px;
+    // max-width: 576px;
+    // max-height: 2581px;
+    overflow: hidden auto;
+    position: relative;
+    // padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom: solid black 0.5px;
+
+    &::-webkit-scrollbar {
+        width: 0.8rem;
+        &-thumb {
+            background-color: #392f2f39;
+            width: 1.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .loading-base {
+        display: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        img {
+            margin-left: 45%;
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    .babel {
+        display: flex;
+    }
+
+    .babel-left {
+        height: 10px;
+        width: 47.5%;
+        margin: 0 10px 0 0;
+    }
+
+    .babel-time {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+        text-align: center;
+        color: #666666;
+        width: 10%;
+    }
+
+    .babel-right {
+        height: 10px;
+        width: 47.5%;
+        margin: 0 0 0 10px;
+    }
+
+    // gap: 12%;
+    // overflow: auto;
+    // &::-webkit-scrollbar {
+    //     width: 0.2rem;
+    //     &-thumb {
+    //         background-color: #ffffff39;
+    //         width: 0.1rem;
+    //         border-radius: 1rem;
+    //     }
+    // }
+    .message {
+        display: flex;
+        align-items: center;
+        .content {
+            max-width: 40%;
+            overflow-wrap: break-word;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border-radius: 1rem;
+            color: #d1d1d1;
+            @media screen and (min-width: 720px) and (max-width: 1080px) {
+                max-width: 70%;
+            }
+        }
+    }
+    .sended {
+        justify-content: flex-end;
+        .content {
+            background-color: #4f04ff21;
+        }
+    }
+    .recieved {
+        justify-content: flex-start;
+        .content {
+            background-color: #9900ff20;
+        }
+    }
+}
+
+.chat-messages {
+}

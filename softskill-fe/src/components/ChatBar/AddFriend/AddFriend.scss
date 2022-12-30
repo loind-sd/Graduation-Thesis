@@ -1,0 +1,253 @@
+.modal-add-friend {
+    display: flex;
+    width: 100%;
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fafafa;
+        // overflow: hidden;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+        color: #999;
+    }
+
+    .item-image {
+        position: relative;
+        width: 50px;
+        height: 50px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .online,
+        .offline {
+            position: absolute;
+            top: 35px;
+            right: 0;
+        }
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    ul ul a {
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: #ffe8e8;
+    }
+
+    .watermark {
+        display: none !important;
+    }
+
+    .btn-close {
+        background: url('https://cdn-icons-png.flaticon.com/512/75/75519.png') no-repeat transparent 50%/1em;
+        border: 0;
+        border-radius: 0.375rem;
+        opacity: 0.5;
+        box-sizing: content-box;
+        width: 1em;
+        height: 1em;
+        padding: 0.25em;
+    }
+
+    .modal-content {
+        background-color: #ffffff !important;
+        border-radius: 6px;
+    }
+
+    .modal-header {
+        border-bottom: unset !important;
+    }
+
+    .modal-invite-body {
+        // border-bottom: 2px solid #333 !important;
+        display: flex;
+    }
+
+    .p-avatar-circle {
+        width: 5rem !important;
+        height: 5rem !important;
+    }
+
+    .btn-invite {
+        background-color: #1b74e4;
+        color: white;
+        border: 1px solid unset;
+    }
+
+    .btn-delete {
+        color: black;
+        border: 1px solid unset;
+        margin-left: 5px;
+    }
+
+    .btn-add {
+        background-color: unset;
+        border: 1px solid #0c870c;
+    }
+
+    .btn-add,
+    .btn-delete,
+    .btn-invite {
+        border-radius: 5px;
+        font-size: 1.3rem;
+        padding: 5px 7px;
+        opacity: 0.9;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:active {
+            font-size: 1.2rem;
+            box-shadow: 0 1px #666;
+            transform: translateY(1px);
+        }
+    }
+
+    .edit-content {
+        position: absolute;
+        right: 10px;
+        font-size: 1.4rem;
+        top: -40px;
+        z-index: 1;
+        border-radius: 6px;
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 7px 12px 7px 7px;
+        box-shadow: 0px 1px 10px 1px #dfdfdf;
+
+        .item-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 4px;
+
+            &:hover {
+                background-color: #d5d8df;
+            }
+        }
+    }
+
+    .corners {
+        position: absolute;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -52px;
+            left: 10px;
+            height: 12px;
+            width: 30px;
+            background: white;
+            border-bottom-left-radius: 135%;
+            transform: rotate(-66deg);
+            box-shadow: 0px 1px 10px 1px #b6a6a6;
+        }
+    }
+
+    .modal-footer {
+        border-top: 2px solid rgb(67, 64, 64) !important;
+    }
+
+    .invite-community {
+        background-color: green;
+        border-radius: 5px;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    }
+
+    // .invite-community:hover,
+    // .btn-invite:hover {
+    //     background-color: rgb(113, 163, 224)
+    // }
+
+    .list-friend {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+
+        .list-group-item {
+            border: unset !important;
+        }
+
+        .list-group-item:first-child {
+            margin-top: 50px;
+        }
+    }
+
+    .button-mission {
+        position: absolute;
+        margin: 0px 87px;
+        bottom: 30px;
+    }
+
+    .list-friend::-webkit-scrollbar {
+        width: 11px;
+    }
+
+    .list-friend::-webkit-scrollbar-track {
+        background: rgb(255, 255, 255);
+        border-radius: 6px;
+    }
+
+    .list-friend::-webkit-scrollbar-thumb {
+        background-color: #536d7b;
+        border-radius: 6px;
+        border: 0.5px solid #a9bec9;
+    }
+
+    .list-friend {
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .modal-invite-body {
+        .p-inputgroup {
+            width: 80% !important;
+            margin: 0 auto;
+
+            .invite-search-input {
+                position: relative;
+                border-radius: 0px;
+                // text-indent: 25px;
+                background-color: #ffffff !important;
+                border: none !important;
+                border-bottom: 2px solid #918888 !important;
+
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none;
+                }
+            }
+
+            .invite-search-icon {
+                position: absolute;
+                right: 65px;
+                top: 4px;
+                height: 35px;
+                z-index: 1;
+                opacity: 0.8;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

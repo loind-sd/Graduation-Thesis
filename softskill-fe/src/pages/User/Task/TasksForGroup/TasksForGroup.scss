@@ -1,0 +1,219 @@
+.p-tabview {
+    font-size: 1.4rem !important;
+
+    .p-tabview-nav {
+        border: none;
+
+        .p-tabview-title {
+            margin: 0 auto;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #343638;
+        }
+
+        .p-tabview-select {
+            border: none !important;
+        }
+
+        li .p-tabview-nav-link {
+            border: none;
+        }
+
+        .p-tabview-ink-bar {
+            background-color: rgb(113, 163, 224) !important;
+        }
+    }
+}
+
+.p-tabview-panels {
+    display: none;
+}
+
+.p-dialog-header-icon {
+    background: rgb(200, 197, 197) !important;
+    margin-top: 5px;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+
+.layout-people {
+    .no-friend {
+        .add-friend {
+            opacity: 0.8 !important;
+            color: black;
+            background: none;
+
+            &:hover {
+                opacity: 1 !important;
+                border: 2px solid #555658;
+            }
+        }
+    }
+}
+
+.layout-guideline {
+    .p-dialog-content {
+        margin-top: -40px !important;
+    }
+
+    .tutorial-guideline {
+        .title {
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .content-tutorial {
+            font-size: 1.6rem;
+        }
+    }
+
+    .room-recommend {
+        // position: fixed;
+        // bottom: 0;
+
+        .room-content {
+            .room-item {
+                background-color: #fff8e4;
+                border-radius: 6px;
+                color: #005f1a;
+                border: 1px solid #005f1a;
+                padding: 5px;
+                justify-content: space-between;
+                --tw-shadow: 0px 4px 8px rgba(39, 17, 15, 0.1);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+                .wrap-content {
+                    margin-right: 5px;
+
+                    .room-name {
+                        font-size: 1.4rem;
+                        margin-bottom: 5px;
+                        color: #164500;
+                    }
+
+                    .room-count {
+                        font-size: 1.1rem;
+                        color: #4b825d;
+                    }
+                }
+
+                .join {
+                    cursor: pointer;
+                    color: #956b01;
+                }
+            }
+        }
+    }
+}
+
+.task-container {
+    .search-input {
+        margin: 0 20px;
+
+        .icon-search {
+            cursor: pointer;
+            position: absolute;
+            font-size: 1.2rem;
+            padding-left: 5px;
+            opacity: 0.8;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 1%;
+                right: -4px;
+                height: 17px;
+                background-color: #e9e2e2;
+                width: 1px;
+            }
+        }
+
+        .p-inputtext {
+            background-color: #f3f9ff;
+            border: none;
+            padding: 10px 10px 10px 40px;
+            width: 100%;
+        }
+    }
+
+    .task-open {
+        margin: 0px;
+
+        .soft-skill {
+            text-shadow: 0 0 12px rgba(237, 233, 226, 0.6);
+            // font-family: 'Buda', cursive;
+            font-weight: 100;
+            font-size: 1.8rem;
+        }
+    }
+
+    .link-view {
+        cursor: pointer;
+        color: #4d8df7;
+        // text-align: center;
+        text-shadow: 0 0 12px rgba(101, 84, 60, 0.6);
+        font-family: 'Buda', cursive;
+        font-weight: 100;
+        font-size: 1.4rem;
+    }
+
+    .task-list {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 2rem;
+        margin: 10px 0;
+
+        .task-item {
+            // background-color: #D8EBFE;
+            border-radius: 10px;
+
+            .task-header {
+                .guideline {
+                    opacity: 0.7;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .task-description {
+                .task-name {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+
+            .task-content {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .task-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 20px !important;
+    }
+
+    .task-open {
+        margin: 10px 20px !important;
+    }
+}
+
+@media (min-width: 1350px) {
+    .task-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 10px 20px !important;
+    }
+
+    .task-open {
+        margin: 10px 20px !important;
+    }
+}

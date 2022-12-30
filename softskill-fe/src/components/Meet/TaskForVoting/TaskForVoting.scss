@@ -1,0 +1,53 @@
+.footer-container {
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+
+        .btn-choose {
+            color: #fff;
+            border-radius: 6px;
+            background-color: #2565C5;
+        }
+
+        .time-count {
+            margin-left: 10px;
+            background-color: #FFAFAF;
+            border-radius: 50%;
+            padding: 10px 7px 3px;
+        }
+    }
+}
+
+.task-voting {
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    margin-bottom: 10px;
+
+    .item-task {
+        margin: 15px;
+
+        .wrap-select {
+            display: flex;
+            align-items: center;
+
+            .task-vote {
+                height: 16px;
+                width: 16px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+
+        .task-content {
+            padding: 5px;
+            font-size: 1.4rem;
+        }
+
+        .task-image {
+            border-radius: 6px;
+            background-size: cover;
+            width: 320px;
+        }
+    }
+}

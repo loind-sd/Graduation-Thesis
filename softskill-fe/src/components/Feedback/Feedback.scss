@@ -1,0 +1,214 @@
+$blue: #007bff;
+$headerColor: #005a78;
+$backColor: #1681a5;
+$white: #ffffff;
+
+// .feeadback {
+.feedback-container {
+    .p-dialog .p-dialog-content:last-of-type {
+        border-radius: 0 !important;
+        border-bottom-right-radius: 6px !important;
+        border-bottom-left-radius: 6px !important;
+    }
+
+    .p-dialog-header {
+        display: flex !important;
+        flex-direction: row;
+        background-color: $headerColor !important;
+        color: $white;
+        border-bottom: 0.2rem solid $white;
+        border-radius: 0;
+        border-top-right-radius: 6px !important;
+        border-top-left-radius: 6px !important;
+
+        .p-dialog-header-icons {
+            Button {
+                margin: 0;
+            }
+        }
+    }
+
+    .p-dialog-content {
+        background-color: $backColor;
+        color: $white;
+        // opacity: .8;
+    }
+
+    Button {
+        margin-top: 1.5rem;
+        width: 100%;
+        background-color: #034a8f;
+        border-color: #ffffff;
+    }
+
+    // }
+}
+
+.dialog-demo {
+    .p-button {
+        position: fixed;
+        transform: rotate(-90deg) translate(50%, -50%);
+        transform-origin: right;
+        right: 0;
+        bottom: 8%;
+        font-size: 1.2rem;
+        min-width: fit-content;
+        color: #1c31a8;
+        border-color: $blue;
+        background-color: #ffffff !important;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .p-button-label {
+        margin-left: 7px !important;
+    }
+
+    .p-button:enabled:hover,
+    .p-button:not(button):not(a):not(.p-disabled):hover {
+        color: #fff !important;
+        border-color: transparent;
+        background: #1c5996 !important;
+        border-color: $blue;
+    }
+}
+
+.dialog-demo .dialog-demo p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.dialog-demo .p-dialog .p-button {
+    min-width: 6rem;
+}
+
+.p-dialog .p-dialog-header .p-dialog-title {
+    font-size: 1.6rem;
+    // color: #c09d9d !important;
+}
+
+.p-dialog {
+    height: auto;
+}
+
+.p-button .p-button-icon-left {
+    margin-right: 0.5rem !important;
+}
+
+.p-dialog .p-dialog-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.p-dialog-content {
+    border-radius: 0px;
+}
+
+.p-dialog .p-dialog-footer {
+    padding: 1rem;
+}
+
+.p-dialog .p-dialog-footer button {
+    margin: 0;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+    color: #034a8f;
+    border-color: transparent;
+    background: $white;
+}
+
+.p-dropdown-item {
+    color: $blue;
+}
+
+.feedback-question {
+    margin-bottom: 2rem;
+}
+
+.feedback-question h5 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highligh {
+    color: $blue;
+}
+
+.feedback-rate {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-star {
+    margin-left: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.feedback-rate h5 {
+    font-weight: 700;
+    margin: auto 0;
+    font-size: 1.6rem;
+}
+
+.feedback-star_label {
+    margin: auto 1rem;
+}
+
+.feedback-star_label span {
+    font-size: 1.5rem;
+}
+
+.feedback-content Textarea {
+    width: 100%;
+}
+
+.feedback-content h5 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+// .p-dialog-content button {
+//     margin-top: 1.5rem;
+//     width: 100%;
+//     background-color: #034a8f;
+//     border-color: #ffffff;
+// }
+
+.toast-demo button {
+    min-width: 10rem;
+    margin-right: 0.5rem;
+}
+
+.p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 960px) {
+    .dialog-demo {
+        font-size: 1rem;
+    }
+
+    .toast-demo button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .feedback-star {
+        flex-direction: column;
+    }
+
+    .p-dropdown {
+        width: 90%;
+    }
+}
+
+.p-component-overlay-enter {
+    animation: none;
+}
+
+.p-dialog-mask.p-component-overlay {
+    pointer-events: none !important;
+}

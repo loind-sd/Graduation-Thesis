@@ -1,0 +1,48 @@
+.pre-wrapper {
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // max-height: min((100vh - 96px) - 60px, 734px);
+    min-height: 100px;
+    padding-top: 8px;
+    border-radius: 8px;
+    background: rgb(231, 231, 231);
+    color: black;
+    //   box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+}
+
+.pre-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pre-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pre-body {
+    margin-top: 12px;
+    color: #161823;
+}
+
+.pre-nickname {
+    font-size: 1.8rem;
+}
+
+.pre-name {
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+}
+
+.add-friend {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(239, 75, 75);
+    color: white;
+}

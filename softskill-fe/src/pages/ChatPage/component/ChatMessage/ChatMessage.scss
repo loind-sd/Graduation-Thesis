@@ -1,0 +1,99 @@
+.recieved {
+    .messge-group-base {
+        height: fit-content;
+        left: 0px;
+        top: auto;
+        width: 100%;
+    }
+
+    .messge-group {
+        position: relative;
+        margin-right: 14px;
+        padding-bottom: 12px;
+    }
+
+    .message-base {
+        position: relative;
+        padding: 2px 48px 2px 72px;
+
+        .message-header {
+            display: flex;
+            flex-direction: row;
+            -webkit-box-align: center;
+            align-items: center;
+
+            .sender-info {
+                display: inline-flex;
+
+                .user-avatar {
+                    position: absolute;
+                    left: 16px;
+                    margin-top: 1px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+
+                .user-name {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    color: #181616;
+                    display: inline;
+                    vertical-align: baseline;
+                    white-space: nowrap;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .sender-time {
+                font-size: 1.2rem;
+                margin-left: 8px;
+                margin-top: 4px;
+                font-style: normal;
+                font-weight: 400;
+                color: #b3b3b3;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+
+        .message-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            background: #f3f0fe;
+            border-radius: 12px;
+            max-width: 730px;
+            padding: 10px 10px 3px 10px;
+            float: left;
+            .chat-message {
+                color: rgba(0, 0, 0, 0.827);
+                white-space: break-spaces;
+                font-size: 16px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                overflow-wrap: break-word;
+                word-break: keep-all;
+            }
+            .time-send {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: #b3b3b3;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+    }
+}

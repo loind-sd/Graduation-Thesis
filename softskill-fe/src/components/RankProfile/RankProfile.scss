@@ -1,0 +1,175 @@
+$green: #4cd964;
+$turquoise: #5ac8fa;
+$blue: #007aff;
+$light-blue: #7dc8e8;
+$purple: #5856d6;
+
+.profile-container {
+  // height: 60vh;
+}
+
+.p-avatar-circle {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+.avatar-frame {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-rank {
+  background-image: url("https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000");
+  width: 70%;
+  height: 73%;
+  position: absolute;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bronze {
+  background-image: url("../../../public/image/dong.png");
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.silver {
+  background-image: url("../../../public/image/bac.png");
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gold {
+  background-image: url("../../../public/image/vang.png");
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.platinum {
+  background-image: url("../../../public/image/bachkim.png");
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.diamond {
+  background-image: url("../../../public/image/kimcuong.png");
+  width: 90% !important;
+  height: 90%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rank-info {
+  color: #69c6e6;
+}
+
+.progress {
+  height: 1rem !important;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 1rem;
+  border-radius: 10px;
+  background-image: linear-gradient(to right,
+      $green,
+      $turquoise,
+      $blue,
+      $light-blue,
+      $purple );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-infinite .progress-bar3 {
+  width: 30%;
+  background-image: linear-gradient(to right,
+      $green,
+      $blue,
+      $light-blue );
+  animation: colorAnimation 1s infinite;
+}
+
+.name {
+  width: fit-content;
+}
+
+.lv-up {
+  height: 25px;
+  width: 25px;
+}
+
+.list-rank {
+  border-radius: 100px !important;
+}
+
+.list-rank .rank {
+  height: 30%;
+}
+
+@keyframes colorAnimation {
+  0% {
+    background-image: linear-gradient(to right,
+        $green,
+        $blue,
+        $light-blue );
+  }
+
+  20% {
+    background-image: linear-gradient(to right,
+        $turquoise,
+        $blue,
+        $light-blue,
+        $purple,
+        $green );
+  }
+
+  40% {
+    background-image: linear-gradient(to right,
+        $blue,
+        $light-blue,
+        $purple,
+        $green,
+        $turquoise );
+  }
+
+  60% {
+    background-image: linear-gradient(to right,
+        $light-blue,
+        $purple,
+        $green,
+        $turquoise,
+        $blue );
+  }
+
+  100% {
+    background-image: linear-gradient(to right,
+        $purple,
+        $green,
+        $turquoise,
+        $blue,
+        $light-blue );
+  }
+}

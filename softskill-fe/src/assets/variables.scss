@@ -1,0 +1,30 @@
+#root {
+    // Color define
+    --color-text: #000000;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-accent: #2e89ff;
+    --color-border-bottom: rgba(0, 0, 0, 0.2);
+    --background-color--round: #e3e8f1;
+    // Height 
+    --height--header: 60px;
+    --height--menu_bar: 100vh;
+
+    // Width
+    --width--separator-column: 15px;
+    --width--menu_bar: 256px;
+    --width--notify: 360px;
+
+
+    //  margin
+    --margin--width: 15px;
+
+    // Background color
+    --background-color--header: #F7FAFF;
+
+    // Font css
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    // Z-Index
+
+    --zIndex-toast: 10000;
+}

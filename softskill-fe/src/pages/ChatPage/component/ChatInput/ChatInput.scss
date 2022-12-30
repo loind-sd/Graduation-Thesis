@@ -1,0 +1,128 @@
+.chat-input-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5% 95%;
+    height: 100%;
+    padding: 0 2rem;
+    @media screen and (min-width: 720px) and (max-width: 1080px) {
+        gap: 1rem;
+    }
+}
+
+.chat-babel {
+    padding: 1.3rem 1rem;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    margin-bottom: 4px;
+    .emoji {
+        position: relative;
+        svg {
+            font-size: 1.5rem;
+            color: #52521a;
+            opacity: 2.5;
+            cursor: pointer;
+            width: 1.8em;
+            height: 1.8em;
+        }
+        .EmojiPickerReact {
+            position: absolute;
+            top: -455px;
+            right: -330px;
+            background-color: rgb(225, 225, 225);
+            box-shadow: 0 5px 10px #63626c;
+            border-color: #4d4c53;
+            .emoji-scroll-wrapper::-webkit-scrollbar {
+                background-color: #080420;
+                width: 5px;
+                &-thumb {
+                    background-color: #9a86f3;
+                }
+            }
+            .emoji-categories {
+                button {
+                    filter: contrast(0);
+                }
+            }
+            .emoji-search {
+                background-color: transparent;
+                border-color: #9a86f3;
+            }
+            .emoji-group:before {
+                background-color: #080420;
+            }
+            .epr-emoji-category-label {
+                background: rgb(185, 185, 185);
+            }
+        }
+    }
+}
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 6px;
+    // gap: 107px;
+
+    background: #f3f9ff;
+    border-radius: 12px;
+    height: 48px;
+    left: 0px;
+    top: 24px;
+    box-shadow: 1px 2px 5px;
+
+    .submit_on_enter {
+        background-color: transparent;
+        // color: white;
+        // overflow-y: scroll;
+        font-size: 1.6rem;
+        border-radius: 8px;
+        width: 100%;
+        height: -webkit-fill-available;
+        // min-height: 35px;
+        max-height: 50px;
+        padding: 10px 16px 10px 15px;
+        border: none;
+        resize: none;
+        outline: none;
+        font-weight: 400;
+        letter-spacing: -0.025rem;
+        line-height: 1.8rem;
+        justify-content: center;
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0.8rem;
+            &-thumb {
+                background-color: #392f2f39;
+                width: 1.5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    button {
+        padding: 0.3rem 1.5rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        // background-color: #9a86f3;
+        border: none;
+        @media screen and (min-width: 720px) and (max-width: 1080px) {
+            padding: 0.3rem 1rem;
+            svg {
+                font-size: 1rem;
+            }
+        }
+        svg {
+            font-size: 2rem;
+            color: rgb(4, 221, 249);
+        }
+    }
+}
