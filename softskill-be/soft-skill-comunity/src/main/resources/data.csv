@@ -1,0 +1,9 @@
+roomName,	description,	softSkillId,    roomSize,   startTime,  taskId,    message
+Test_NameMax, Phòng dành cho giới trẻ, 1, 10, 2022-10-10, 1, errorMessage
+Group1_tw, Phòng dành cho giới trẻ, 1, 10, 2022-10-10, 1, errorMessage
+Gr, Phòng dành cho giới trẻ, 1, 101, 2022-10-10, 1, errorMessage
+Gr, Phòng dành cho giới trẻ, null, 10, 2022-10-10, 1, errorMessage
+Gr, Phòng dành cho giới trẻ, 1, 10, null, 1, errorMessage
+Gr, Phòng dành cho giới trẻ, 1, 10, 2022-10-10, null, errorMessage
+Gr, null, 1, 10, 2022-10-10, 1, errorMessage
+
